@@ -148,32 +148,32 @@
       
 	</body>
 
-<script src="//code.jquery.com/jquery-2.1.1.min.js">
-  function Play(y,item) {
+<script src="jquery-2.1.1.js"></script>
+	<script>
+		function Play(y,item) {
     
-    var list = document.getElementsByClassName('sound');
-    debugger;
-    for(i =0;i<list.length;i++){
-      list[i].pause();
-      list[i].currentTime = 0;
-    } 
-    
-    
-    $('.btnclass').removeClass('playing');
-    var audio = document.getElementById(y);
-    if (audio.paused) {
-        $(item).addClass('playing');
-        audio.play();
-		} else {
-        audio.currentTime = 0
-    }
-  }
-    function Stop(x){
-      var audio = document.getElementById(x);
-      audio.pause();
-      audio.currentTime = 0;
-      $('.btnclass').removeClass('playing');
-    }
+			var list = document.getElementsByClassName('sound');
+			for(i =0;i<list.length;i++){
+			list[i].pause();
+			list[i].currentTime = 0;
+			} 
+			
+			
+			$('.btnclass').removeClass('playing');
+			var audio = document.getElementById(y);
+			if (audio.paused) {
+				$(item).addClass('playing');
+				audio.play();
+				} else {
+				audio.currentTime = 0
+			}
+			}
+			function Stop(x){
+			var audio = document.getElementById(x);
+			audio.pause();
+			audio.currentTime = 0;
+			$('.btnclass').removeClass('playing');
+			}
 </script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
