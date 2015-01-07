@@ -1,20 +1,67 @@
 <html>
-<head>
-        <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<head>
+      
+	  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
       <title>de-soundboard</title>
+	
 	</head>
+	<header class="navbar-inverse"  role="banner">
+			<div class="container">
+				<nav role="navigation">
+					<div class="container-fluid"
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="home" class="navbar-brand blue" href="index.html">Break Time</a>
+					</div>
+	
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="articles.html">Articles to Read</a></li>
+							<li><a href="pics.html">Funny Pics and Gifs</a></li>
+							<li><a href="videos.html">Videos</a></li>
+							<li><a href="SoundBoard.html">Tyler's Soundboard</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Sites<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Blah</a></li>
+								<li><a href="#">Blah</a></li>
+							</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</header>
 	
 	<body style="background-color:grey">
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/jackass.mp3" id="jackass" preload="auto"></audio>
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/ba-dum-tssshhh.mp3" id="badumtss" preload="auto"></audio>
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/sadtrombone.swf.mp3" id="trombone" preload="auto"></audio>
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/jeopardy.mp3" id="jeopardy" preload="auto"></audio>
-      <audio class='sound'src="http://soundfxnow.com/soundfx/ShoopDaWoop-DragonballZ-Cell.mp3" id="lazer" preload="auto"></audio>
-      <audio class='sound'src="http://soundfxnow.com/soundfx/CensorBeep.mp3" id="censor" preload="auto"></audio>
-      <audio class='sound'src="http://soundfxnow.com/soundfx/Chewbacca1.mp3" id="chewy" preload="auto"></audio>
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/george-micael-wham-careless-whisper-1.mp3" id="sax" preload="auto"></audio>
-      <audio class='sound'src="http://www.myinstants.com/media/sounds/aint-nobody-got-time-for-that_1.mp3" id="georgiabrown" preload="auto"></audio>
-	  <audio class='sound'src="http://cdn.frustra.org/sounds/sound_tf2/vo/announcer_you_failed.ogg" id="fail" preload="auto"  type="audio/ogg"></audio>
+		<div class="container">
+			<div class="col-xs-3 col-md-4"></div>
+			<div class="col-xs-3 col-md-4">
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/jackass.mp3" id="jackass" preload="auto"></audio>
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/ba-dum-tssshhh.mp3" id="badumtss" preload="auto"></audio>
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/sadtrombone.swf.mp3" id="trombone" preload="auto"></audio>
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/jeopardy.mp3" id="jeopardy" preload="auto"></audio>
+				<audio class='sound'src="http://soundfxnow.com/soundfx/ShoopDaWoop-DragonballZ-Cell.mp3" id="lazer" preload="auto"></audio>
+				<audio class='sound'src="http://soundfxnow.com/soundfx/CensorBeep.mp3" id="censor" preload="auto"></audio>
+				<audio class='sound'src="http://soundfxnow.com/soundfx/Chewbacca1.mp3" id="chewy" preload="auto"></audio>
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/george-micael-wham-careless-whisper-1.mp3" id="sax" preload="auto"></audio>
+				<audio class='sound'src="http://www.myinstants.com/media/sounds/aint-nobody-got-time-for-that_1.mp3" id="georgiabrown" preload="auto"></audio>
+				<audio class='sound'src="http://cdn.frustra.org/sounds/sound_tf2/vo/announcer_you_failed.ogg" id="fail" preload="auto"  type="audio/ogg"></audio>
+			</div>
+		</div>
       
      
       <style>
@@ -101,7 +148,7 @@
       
 	</body>
 
-<script>
+<script src="//code.jquery.com/jquery-2.1.1.min.js">
   function Play(y,item) {
     
     var list = document.getElementsByClassName('sound');
@@ -128,4 +175,6 @@
       $('.btnclass').removeClass('playing');
     }
 </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
