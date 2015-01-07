@@ -47,9 +47,7 @@
 		</header>
 	
 	<body style="background-color:grey">
-		<div class="container">
-			<div class="col-xs-3 col-md-4"></div>
-			<div class="col-xs-3 col-md-4">
+		
 				<audio class='sound'src="http://www.myinstants.com/media/sounds/jackass.mp3" id="jackass" preload="auto"></audio>
 				<audio class='sound'src="http://www.myinstants.com/media/sounds/ba-dum-tssshhh.mp3" id="badumtss" preload="auto"></audio>
 				<audio class='sound'src="http://www.myinstants.com/media/sounds/sadtrombone.swf.mp3" id="trombone" preload="auto"></audio>
@@ -60,8 +58,8 @@
 				<audio class='sound'src="http://www.myinstants.com/media/sounds/george-micael-wham-careless-whisper-1.mp3" id="sax" preload="auto"></audio>
 				<audio class='sound'src="http://www.myinstants.com/media/sounds/aint-nobody-got-time-for-that_1.mp3" id="georgiabrown" preload="auto"></audio>
 				<audio class='sound'src="http://cdn.frustra.org/sounds/sound_tf2/vo/announcer_you_failed.ogg" id="fail" preload="auto"  type="audio/ogg"></audio>
-			</div>
-		</div>
+				
+			
       
      
       <style>
@@ -102,48 +100,52 @@
       </style>
       
       
-      
-      
-      <div>
-        <input class="btnclass btn" type="button" onclick="Play('jackass',this)"value="jackass" id="btn1"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('jackass')" value="stop"  id="pausebtn1"/>
-      </div> 
-      <div>
-        <input class="btnclass btn" type="button" onclick="Play('badumtss',this)"value="badum tss" id="btn2"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('badumtss')" value="stop" id="pausebtn2"/>
-      </div>
-      <div>
-        <input class="btnclass btn" type="button" onclick="Play('trombone',this)"value="sad trombone" id="btn3"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('trombone')" value="stop" id="pausebtn3"/>
-      </div>
-       <div>
-        <input class="btnclass btn" type="button" onclick="Play('jeopardy',this)"value="jeopardy" id="btn4"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('jeopardy')" value="stop" id="pausebtn4"/>
-      </div>
-      <div>
-        <input class="btnclass btn" type="button" onclick="Play('lazer',this)"value="firin' mah lazer" id="btn5"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('lazer')" value="stop" id="pausebtn5"/>
-      </div>
-      <div>
-        <input class="btnclass btn" type="button" onclick="Play('censor',this)"value="censor beep" id="btn6"/>
-        <input class="btnclass2 btn"type="button" onclick="Stop('censor')" value="stop" id="pausebtn6"/>
-      </div>
-      <div>
-       <input class="btnclass btn" type="button" onclick="Play('chewy',this)"value="chewbacca" id="btn7"/>
-       <input class="btnclass2 btn"type="button" onclick="Stop('chewy')" value="stop" id="pausebtn7"/>
-     </div>
-      <div>
-       <input class="btnclass btn" type="button" onclick="Play('sax',this)"value="sexy sax" id="btn8"/>
-       <input class="btnclass2 btn"type="button" onclick="Stop('sax')" value="stop" id="pausebtn8"/>
-     </div>
-     <div>
-       <input class="btnclass btn" type="button" onclick="Play('georgiabrown',this)"value="sweet brown" id="btn9"/>
-       <input class="btnclass2 btn"type="button" onclick="Stop('georgiabrown')" value="stop" id="pausebtn9"/>
-     </div>
-	 <div>
-       <input class="btnclass btn" type="button" onclick="Play('fail',this)"value="fail" id="btn10"/>
-       <input class="btnclass2 btn"type="button" onclick="Stop('fail')" value="stop" id="pausebtn10"/>
-     </div>
+     <div class="container">
+		<div class="col-xs-3 col-md-4"></div>
+			<div class="col-xs-3 col-md-4">
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('jackass',this)"value="jackass" id="btn1"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('jackass')" value="stop"  id="pausebtn1"/>
+				</div> 
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('badumtss',this)"value="badum tss" id="btn2"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('badumtss')" value="stop" id="pausebtn2"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('trombone',this)"value="sad trombone" id="btn3"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('trombone')" value="stop" id="pausebtn3"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('jeopardy',this)"value="jeopardy" id="btn4"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('jeopardy')" value="stop" id="pausebtn4"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('lazer',this)"value="firin' mah lazer" id="btn5"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('lazer')" value="stop" id="pausebtn5"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('censor',this)"value="censor beep" id="btn6"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('censor')" value="stop" id="pausebtn6"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('chewy',this)"value="chewbacca" id="btn7"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('chewy')" value="stop" id="pausebtn7"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('sax',this)"value="sexy sax" id="btn8"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('sax')" value="stop" id="pausebtn8"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('georgiabrown',this)"value="sweet brown" id="btn9"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('georgiabrown')" value="stop" id="pausebtn9"/>
+				</div>
+				<div>
+					<input class="btnclass btn" type="button" onclick="Play('fail',this)"value="fail" id="btn10"/>
+					<input class="btnclass2 btn"type="button" onclick="Stop('fail')" value="stop" id="pausebtn10"/>
+				</div>
+			</div>
+	 </div>
+	 
       
       
 	</body>
